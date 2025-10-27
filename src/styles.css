@@ -1,0 +1,31 @@
+:root {
+  --primary: #0078ff;
+  --dark: #1a1a1a;
+  --light: #f9f9f9;
+  --radius: 1rem;
+  --card-background:#ffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: var(--dark);
+  background-color: var(--light);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 2rem;
+}

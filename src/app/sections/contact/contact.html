@@ -1,0 +1,19 @@
+<section id="contact" class="contact">
+  <h2>Entre em contato</h2>
+  <form class="form">
+    <input-field label="Nome completo" placeholder="Seu nome"></input-field>
+    <input-field label="E-mail" placeholder="email@exemplo.com"></input-field>
+    <select-comp
+      label="Assunto"
+      [options]="['Suporte', 'Parcerias', 'Dúvidas']">
+    </select-comp>
+    <textarea placeholder="Sua mensagem"></textarea>
+    <button-comp label="Enviar" (click)="openModal()"></button-comp>
+  </form>
+
+  @if (showModal()) {
+    <modal title="Mensagem enviada" (close)="closeModal()">
+      <p>Obrigado por entrar em contato! Retornaremos em breve 🚀</p>
+    </modal>
+  }
+</section>

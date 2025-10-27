@@ -1,0 +1,8 @@
+<button
+  [attr.type]="type || 'button'"
+  [class.outline]="variant === 'outline'"
+  [class.secondary]="variant === 'secondary'"
+  (click)="click.emit($event)"
+>
+  {{ label }}
+</button>

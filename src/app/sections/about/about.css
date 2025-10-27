@@ -1,0 +1,15 @@
+.about {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 4rem 2rem;
+}
+
+.about img {
+  width: 45%;
+  border-radius: var(--radius);
+}
+
+.about .text h2{
+  margin-bottom: 1rem;
+}

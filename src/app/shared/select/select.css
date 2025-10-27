@@ -1,0 +1,85 @@
+.select-group {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+label {
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+  color: #333;
+}
+
+.select-box {
+  background: var(--card-background);
+  border: 1px solid #ccc;
+  border-radius: var(--radius);
+  padding: 0.8rem 1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+.select-box:hover {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(0, 120, 255, 0.1);
+}
+
+.selected {
+  font-size: 1rem;
+}
+
+.placeholder {
+  color: #888;
+}
+
+.arrow {
+  fill: #444;
+  transition: transform 0.2s;
+}
+
+:host-context(.open) .arrow {
+  transform: rotate(180deg);
+}
+
+.options {
+  position: absolute;
+  top: calc(100% + 0.3rem);
+  left: 0;
+  right: 0;
+  background: var(--card-background);
+  border: 1px solid #ccc;
+  border-radius: var(--radius);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  z-index: 5;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  animation: fadeIn 0.15s ease-out;
+}
+
+.options li {
+  padding: 0.8rem 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.options li:hover {
+  background: var(--primary);
+  color: var(--card-background);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

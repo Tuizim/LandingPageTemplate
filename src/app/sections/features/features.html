@@ -1,0 +1,12 @@
+<section id="features" class="features">
+  <h2>Nossos recursos</h2>
+  <div class="cards">
+    @for (feature of features(); track feature.title) {
+      <div class="card">
+        <div class="icon">{{ feature.icon }}</div>
+        <h3>{{ feature.title }}</h3>
+        <p>{{ feature.desc }}</p>
+      </div>
+    }
+  </div>
+</section>

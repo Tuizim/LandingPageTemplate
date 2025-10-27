@@ -1,0 +1,23 @@
+.contact {
+  padding: 4rem 2rem;
+  background: #fff;
+  border-radius: var(--radius);
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+  max-width: 500px;
+  margin-inline: auto;
+}
+
+textarea {
+  padding: 1rem;
+  border-radius: var(--radius);
+  border: 1px solid #ccc;
+  resize: none;
+  min-height: 100px;
+}

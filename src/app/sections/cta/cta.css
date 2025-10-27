@@ -1,0 +1,11 @@
+.cta {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: var(--primary);
+  color: var(--card-background);
+  border-radius: var(--radius);
+}
+
+.cta h2{
+  margin-bottom: 1rem;
+}
