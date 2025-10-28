@@ -1,0 +1,17 @@
+<div class="card">
+  @if (image!='') {
+    <div class="image-wrapper">
+      <img [src]="image" [alt]="title">
+    </div>
+  }
+  <div class="content">
+    <div class="header-line">
+      <h3 class="title">{{ title }}</h3>
+      @if (price) {
+        <span class="price">{{ price }}</span>
+      }
+    </div>
+
+    <p class="desc">{{ desc }}</p>
+  </div>
+</div>
