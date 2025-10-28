@@ -1,0 +1,17 @@
+<section id="food-menu" class="food-menu">
+  <h2>Nosso Cardapio</h2>
+  <p class="subtitle">
+    Favorito dos Clientes
+  </p>
+
+  <div class="grid-cards">
+    @for (item of items(); track item.title) {
+      <app-card
+        [image]="item.image"
+        [title]="item.title"
+        [desc]="item.desc"
+        [price]="item.price">
+      </app-card>
+    }
+  </div>
+</section>
